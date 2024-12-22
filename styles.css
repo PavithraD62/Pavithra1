@@ -1,0 +1,103 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a5b8c, #8d79a5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Center Alignment for Form Container */
+.form-container {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px;
+    margin: auto;
+}
+
+/* Form Heading */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 0.6rem;
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+/* Input Fields, Select, and Textarea Styling */
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #333;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect */
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #6a5b8c;
+    outline: none;
+    box-shadow: 0 0 4px rgba(106, 91, 140, 0.5);
+}
+
+/* Textarea */
+.form-group textarea {
+    resize: none;
+    height: 30px;
+    line-height: 1rem;
+}
+
+/* Submit Button */
+.form-btn {
+    display: block;
+    width: 100%;
+    padding: 0.3rem;
+    background: #6a5b8c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button Hover Effect */
+.form-btn:hover {
+    background: #5d4a73;
+}
+
+/* Small Screens/Responsive Styling */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 0.8rem;
+        max-width: 90%;
+    }
+
+    .form-btn {
+        font-size: 0.8rem;
+    }
+}
